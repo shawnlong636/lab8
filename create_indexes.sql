@@ -21,3 +21,11 @@ USING BTREE (supplier, part_number);
 CREATE INDEX SFO_SupplierPartNo
 ON part_sfo
 USING BTREE (supplier, part_number);
+
+CREATE INDEX NYC_Supplier
+ON part_nyc
+USING BTREE (supplier);
+
+CREATE INDEX SFO_Supplier
+ON part_sfo
+USING BTREE (supplier);
